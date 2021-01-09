@@ -1,0 +1,2038 @@
+[
+    {
+        "id": "7ecf65bb.7c1bec",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f7adeac4.69c4f8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "dd592817.e3ca78",
+        "type": "subflow",
+        "name": "Kiểm tra trạng thái kết nối Internet",
+        "info": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": [
+                    {
+                        "id": "12f0a27.6d65a5e"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 625.0000095367432,
+                "y": 120.00000381469727,
+                "wires": [
+                    {
+                        "id": "fe4aec18.1e2a4",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 625.0000095367432,
+                "y": 181.00000190734863,
+                "wires": [
+                    {
+                        "id": "c2674f9e.c999d",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "inputLabels": [
+            "Kết quả trả về của iNut cảm biến"
+        ],
+        "outputLabels": [
+            "Thiết bị đang online (dã vào mạng)",
+            "Thiết bị đang offline (đã rớt mạng)"
+        ]
+    },
+    {
+        "id": "29c63fc5.e4d25",
+        "type": "subflow",
+        "name": "Lấy dữ từ iNut",
+        "info": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": [
+                    {
+                        "id": "bf30670.b184898"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 859.0000343322754,
+                "y": 98.00000190734863,
+                "wires": [
+                    {
+                        "id": "dad88ccb.4ca0a",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 968.0000343322754,
+                "y": 102.00000286102295,
+                "wires": [
+                    {
+                        "id": "dad88ccb.4ca0a",
+                        "port": 1
+                    }
+                ]
+            },
+            {
+                "x": 1048.9999732971191,
+                "y": 101.00000381469727,
+                "wires": [
+                    {
+                        "id": "dad88ccb.4ca0a",
+                        "port": 2
+                    }
+                ]
+            },
+            {
+                "x": 1116.9999732971191,
+                "y": 112.00000381469727,
+                "wires": [
+                    {
+                        "id": "dad88ccb.4ca0a",
+                        "port": 3
+                    }
+                ]
+            },
+            {
+                "x": 1178.0000820159912,
+                "y": 129.0000057220459,
+                "wires": [
+                    {
+                        "id": "dad88ccb.4ca0a",
+                        "port": 4
+                    }
+                ]
+            },
+            {
+                "x": 1216.0000820159912,
+                "y": 188.0000057220459,
+                "wires": [
+                    {
+                        "id": "dad88ccb.4ca0a",
+                        "port": 5
+                    }
+                ]
+            },
+            {
+                "x": 1189.0000839233398,
+                "y": 263.00000762939453,
+                "wires": [
+                    {
+                        "id": "dad88ccb.4ca0a",
+                        "port": 6
+                    }
+                ]
+            },
+            {
+                "x": 1173.9999742507935,
+                "y": 312.00000762939453,
+                "wires": [
+                    {
+                        "id": "dad88ccb.4ca0a",
+                        "port": 7
+                    }
+                ]
+            }
+        ],
+        "inputLabels": [
+            "Nhận đầu vào MQTT IN từ iNut cảm biến"
+        ],
+        "outputLabels": [
+            "Luồng cảm biến 1",
+            "Luồng cảm biến 2",
+            "Luồng cảm biến 3",
+            "Luồng cảm biến 4",
+            "Luồng cảm biến 5",
+            "Luồng cảm biến 6",
+            "Luồng cảm biến 7",
+            "Luồng cảm biến 8"
+        ]
+    },
+    {
+        "id": "da3395d9.c5ac28",
+        "type": "subflow",
+        "name": "Data From iNut Sensor",
+        "info": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": [
+                    {
+                        "id": "44db4f.97e1c4b"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1000,
+                "y": 180,
+                "wires": [
+                    {
+                        "id": "61a965ef.f8e4cc",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 1000,
+                "y": 260,
+                "wires": [
+                    {
+                        "id": "61a965ef.f8e4cc",
+                        "port": 1
+                    }
+                ]
+            },
+            {
+                "x": 980,
+                "y": 320,
+                "wires": [
+                    {
+                        "id": "61a965ef.f8e4cc",
+                        "port": 2
+                    }
+                ]
+            }
+        ],
+        "inputLabels": [
+            "Nhận đầu vào MQTT IN từ iNut cảm biến"
+        ],
+        "outputLabels": [
+            "Luồng cảm biến 1",
+            "Luồng cảm biến 2",
+            "Luồng cảm biến 3"
+        ]
+    },
+    {
+        "id": "bc0f3e1b.f26cc",
+        "type": "subflow",
+        "name": "Lấy dữ từ iNut (2)",
+        "info": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": [
+                    {
+                        "id": "51d442da.c1900c"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 859.0000343322754,
+                "y": 98.00000190734863,
+                "wires": [
+                    {
+                        "id": "d7124a6f.eced88",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 968.0000343322754,
+                "y": 102.00000286102295,
+                "wires": [
+                    {
+                        "id": "d7124a6f.eced88",
+                        "port": 1
+                    }
+                ]
+            },
+            {
+                "x": 1048.9999732971191,
+                "y": 101.00000381469727,
+                "wires": [
+                    {
+                        "id": "d7124a6f.eced88",
+                        "port": 2
+                    }
+                ]
+            },
+            {
+                "x": 1116.9999732971191,
+                "y": 112.00000381469727,
+                "wires": [
+                    {
+                        "id": "d7124a6f.eced88",
+                        "port": 3
+                    }
+                ]
+            }
+        ],
+        "inputLabels": [
+            "Nhận đầu vào MQTT IN từ iNut cảm biến"
+        ],
+        "outputLabels": [
+            "Luồng cảm biến 1",
+            "Luồng cảm biến 2",
+            "Luồng cảm biến 3",
+            "Luồng cảm biến 4",
+            "Luồng cảm biến 5",
+            "Luồng cảm biến 6",
+            "Luồng cảm biến 7",
+            "Luồng cảm biến 8"
+        ]
+    },
+    {
+        "id": "8b0f2120.9cd76",
+        "type": "ui_group",
+        "z": "",
+        "name": "Thứ nhất",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "e1edb70c.c533c8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Thứ 2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "dd976f6f.0e00a",
+        "type": "ui_group",
+        "z": "",
+        "name": "Giao diện",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "13",
+        "collapse": false
+    },
+    {
+        "id": "92b6ed5e.059f7",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.mysmarthome.vn",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "27a17ed1.da1522",
+        "type": "ui_group",
+        "z": "",
+        "name": "Demo",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b9121354.c466d",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "c33f8b3b.b75f78",
+        "type": "ui_group",
+        "z": "",
+        "name": "DATA 3",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "320e5780.49cd18",
+        "type": "ui_group",
+        "z": "",
+        "name": "DATA 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "fb397814.168008",
+        "type": "ui_group",
+        "z": "",
+        "name": "DATA 2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "31482906.6d1806",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.mysmarthome.vn",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "9bfb1558.e2bb48",
+        "type": "ui_group",
+        "z": "",
+        "name": "DATA 3",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "a304c42d.85aaf8",
+        "type": "ui_group",
+        "z": "",
+        "name": "DATA 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "cc35d1e9.c803c",
+        "type": "ui_group",
+        "z": "",
+        "name": "DATA 2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "34abc8b8.0129e8",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.mysmarthome.vn",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "69c587d3.4b8758",
+        "type": "ui_group",
+        "z": "",
+        "name": "DATA 3",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "e5378ce0.ad654",
+        "type": "ui_group",
+        "z": "",
+        "name": "DATA 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "be504865.85b9d8",
+        "type": "ui_group",
+        "z": "",
+        "name": "DATA 2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "d9a0ed05.b4674",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.mysmarthome.vn",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "a6b4658c.4658b8",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "m16.cloudmqtt.com",
+        "port": "19313",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "dd70acb7.f3603",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "driver.cloudmqtt.com",
+        "port": "18959",
+        "tls": "",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "2",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "5488e895.82cd68",
+        "type": "ui_tab",
+        "z": "",
+        "name": "THÔNG SÔ MÔI TRƯỜNG",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a8d932b5.1e2b",
+        "type": "ui_group",
+        "z": "",
+        "name": "",
+        "tab": "5488e895.82cd68",
+        "order": 1,
+        "disp": true,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "58cf5fe8.50d2e",
+        "type": "ui_group",
+        "z": "",
+        "name": "",
+        "tab": "5488e895.82cd68",
+        "order": 2,
+        "disp": true,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "e97d8b36.114dc8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Group 2",
+        "tab": "",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a5479e77.965ac",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.mysmarthome.vn",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "8dfa6983.f2bb78",
+        "type": "ui_group",
+        "z": "",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b0b05fc9.dbf9",
+        "type": "ui_group",
+        "z": "",
+        "name": "",
+        "tab": "5488e895.82cd68",
+        "order": 3,
+        "disp": true,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "12f0a27.6d65a5e",
+        "type": "json",
+        "z": "dd592817.e3ca78",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 144,
+        "y": 153,
+        "wires": [
+            [
+                "f36ba5b8.bedd28"
+            ]
+        ]
+    },
+    {
+        "id": "f36ba5b8.bedd28",
+        "type": "switch",
+        "z": "dd592817.e3ca78",
+        "name": "Kiểm tra trạng thái",
+        "property": "payload.status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "neq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 306.00001525878906,
+        "y": 153.9999542236328,
+        "wires": [
+            [
+                "fe4aec18.1e2a4"
+            ],
+            [
+                "c2674f9e.c999d"
+            ]
+        ]
+    },
+    {
+        "id": "fe4aec18.1e2a4",
+        "type": "change",
+        "z": "dd592817.e3ca78",
+        "name": "ONLINE",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ONLINE",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480.55554962158203,
+        "y": 120.66659927368164,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2674f9e.c999d",
+        "type": "change",
+        "z": "dd592817.e3ca78",
+        "name": "OFFLINE",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "OFFLINE",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480.1666564941406,
+        "y": 180.7777099609375,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bf30670.b184898",
+        "type": "json",
+        "z": "29c63fc5.e4d25",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 165,
+        "y": 84,
+        "wires": [
+            [
+                "90a63cde.37f04"
+            ]
+        ]
+    },
+    {
+        "id": "dad88ccb.4ca0a",
+        "type": "switch",
+        "z": "29c63fc5.e4d25",
+        "name": "Phân luồn",
+        "property": "relayId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "5",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "6",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "7",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 8,
+        "x": 825.9869575500488,
+        "y": 288.1562738418579,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "90a63cde.37f04",
+        "type": "function",
+        "z": "29c63fc5.e4d25",
+        "name": "Lặp",
+        "func": "if (!msg.states) {\n    msg.states = msg.payload\n    msg.i = 0\n    msg.realTopic = msg.topic\n    return msg;\n} else {\n    msg.i++\n    \n    if (msg.i < msg.states.length)\n        return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 327.89060974121094,
+        "y": 83.33600330352783,
+        "wires": [
+            [
+                "5d05a62f.996098"
+            ]
+        ]
+    },
+    {
+        "id": "5d05a62f.996098",
+        "type": "function",
+        "z": "29c63fc5.e4d25",
+        "name": "Lấy trạng thái thiết bị",
+        "func": "msg.relayId = msg.i\nmsg.payload = msg.states[msg.i].state\nmsg.topic = 'Cảm biến #' + msg.i\nmsg.id = msg.realTopic + '/' + msg.relayId\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 477.89060974121094,
+        "y": 183.33600330352783,
+        "wires": [
+            [
+                "90a63cde.37f04",
+                "dad88ccb.4ca0a"
+            ]
+        ]
+    },
+    {
+        "id": "44db4f.97e1c4b",
+        "type": "json",
+        "z": "da3395d9.c5ac28",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 165,
+        "y": 84,
+        "wires": [
+            [
+                "d1cd6560.7008e8"
+            ]
+        ]
+    },
+    {
+        "id": "61a965ef.f8e4cc",
+        "type": "switch",
+        "z": "da3395d9.c5ac28",
+        "name": "Phân luồn",
+        "property": "relayId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 825.9869575500488,
+        "y": 288.1562738418579,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d1cd6560.7008e8",
+        "type": "function",
+        "z": "da3395d9.c5ac28",
+        "name": "Lặp",
+        "func": "if (!msg.states) {\n    msg.states = msg.payload\n    msg.i = 0\n    return msg;\n} else {\n    msg.i++\n    if (msg.states[msg.i])\n        return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 327.89060974121094,
+        "y": 83.33600330352783,
+        "wires": [
+            [
+                "914b7a42.ccfa18"
+            ]
+        ]
+    },
+    {
+        "id": "914b7a42.ccfa18",
+        "type": "function",
+        "z": "da3395d9.c5ac28",
+        "name": "Lấy trạng thái thiết bị",
+        "func": "msg.relayId = msg.i\nmsg.payload = msg.states[msg.i].state\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 477.89060974121094,
+        "y": 183.33600330352783,
+        "wires": [
+            [
+                "d1cd6560.7008e8",
+                "61a965ef.f8e4cc"
+            ]
+        ]
+    },
+    {
+        "id": "c5ee4524.b62858",
+        "type": "ui_gauge",
+        "z": "f7adeac4.69c4f8",
+        "name": "",
+        "group": "9bfb1558.e2bb48",
+        "order": 1,
+        "width": "6",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Hướng Gió",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "15",
+        "colors": [
+            "#1f964f",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 2030,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "fd6a2ab8.01b988",
+        "type": "ui_gauge",
+        "z": "f7adeac4.69c4f8",
+        "name": "",
+        "group": "a304c42d.85aaf8",
+        "order": 1,
+        "width": "6",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Gió",
+        "label": "m/s",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#1f964f",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 2010,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "fd48178b.9b80a8",
+        "type": "subflow:da3395d9.c5ac28",
+        "z": "f7adeac4.69c4f8",
+        "name": "",
+        "x": 1600,
+        "y": 420,
+        "wires": [
+            [
+                "777c31c7.c3c9b"
+            ],
+            [
+                "b1d47cd7.28ea9"
+            ],
+            [
+                "a24c323b.48fbc"
+            ]
+        ]
+    },
+    {
+        "id": "69a9ced3.ae3db",
+        "type": "ui_gauge",
+        "z": "f7adeac4.69c4f8",
+        "name": "",
+        "group": "cc35d1e9.c803c",
+        "order": 1,
+        "width": "6",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Lưu Lượng Mưa",
+        "label": "mm",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#1f964f",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 2040,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "777c31c7.c3c9b",
+        "type": "change",
+        "z": "f7adeac4.69c4f8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Gió",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1830,
+        "y": 360,
+        "wires": [
+            [
+                "c845ffad.57d99",
+                "fd6a2ab8.01b988"
+            ]
+        ]
+    },
+    {
+        "id": "c845ffad.57d99",
+        "type": "ui_chart",
+        "z": "f7adeac4.69c4f8",
+        "name": "",
+        "group": "a304c42d.85aaf8",
+        "order": 2,
+        "width": "6",
+        "height": "6",
+        "label": "Biểu Đồ Gió",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Biểu Đồ Gió",
+        "dot": false,
+        "ymin": "-5",
+        "ymax": "1000",
+        "removeOlder": "2",
+        "removeOlderPoints": "2000",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 2030,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a24c323b.48fbc",
+        "type": "change",
+        "z": "f7adeac4.69c4f8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Lưu Lượng Mưa",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1830,
+        "y": 480,
+        "wires": [
+            [
+                "78f57c26.8013b4",
+                "69a9ced3.ae3db"
+            ]
+        ]
+    },
+    {
+        "id": "78f57c26.8013b4",
+        "type": "ui_chart",
+        "z": "f7adeac4.69c4f8",
+        "name": "",
+        "group": "cc35d1e9.c803c",
+        "order": 2,
+        "width": "6",
+        "height": "6",
+        "label": "Biểu Đồ Lưu Lượng Mưa",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Biểu Đồ Lưu Lượng Mưa",
+        "dot": false,
+        "ymin": "-5",
+        "ymax": "1000",
+        "removeOlder": "2",
+        "removeOlderPoints": "2000",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 2070,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b1d47cd7.28ea9",
+        "type": "change",
+        "z": "f7adeac4.69c4f8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Hướng Gió",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1830,
+        "y": 420,
+        "wires": [
+            [
+                "c5ee4524.b62858",
+                "55b3e339.cf5afc",
+                "61203b0b.2e8d44"
+            ]
+        ]
+    },
+    {
+        "id": "55b3e339.cf5afc",
+        "type": "ui_gauge",
+        "z": "f7adeac4.69c4f8",
+        "name": "",
+        "group": "9bfb1558.e2bb48",
+        "order": 2,
+        "width": "6",
+        "height": "5",
+        "gtype": "compass",
+        "title": "La Bàn",
+        "label": "NEWS",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "16",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 2020,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "61203b0b.2e8d44",
+        "type": "function",
+        "z": "f7adeac4.69c4f8",
+        "name": "Set Hướng Theo Yêu Cầu",
+        "func": "var huong;\nif (msg.payload == 0) {\n    huong = \"Bắc\";\n}\nelse if (msg.payload == 1) {\n    huong = \"Bắc Đông Bắc\";\n}\nelse if (msg.payload == 2) {\n    huong = \"Đông Bắc\";\n}\nelse if (msg.payload == 3) {\n    huong = \"Đông Đông Bắc\";\n}\nelse if (msg.payload == 4) {\n    huong = \"Đông\";\n}\nelse if (msg.payload == 5) {\n    huong = \"Đông Đông Nam\";\n}\nelse if (msg.payload == 6) {\n    huong = \"Đông Nam\";\n}\nelse if (msg.payload == 7) {\n    huong = \"Nam Đông Nam\";\n}\nelse if (msg.payload == 8) {\n    huong = \"Nam\";\n}\nelse if (msg.payload == 9) {\n    huong = \"Nam Tây Nam\";\n}\nelse if (msg.payload == 10) {\n    huong = \"Tây Nam\";\n}\nelse if (msg.payload == 11) {\n    huong = \"Tây Tây Nam\";\n}\nelse if (msg.payload == 12) {\n    huong = \"Tây\";\n}\nelse if (msg.payload == 13) {\n    huong = \"Tây Tây Bắc\";\n}\nelse if (msg.payload == 14) {\n    huong = \"Tây Bắc\";\n}\nelse if (msg.payload == 15) {\n    huong = \"Bắc Tây Bắc\";\n}\nmsg.payload = huong;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2070,
+        "y": 420,
+        "wires": [
+            [
+                "2fdc8c37.6ec014"
+            ]
+        ]
+    },
+    {
+        "id": "2fdc8c37.6ec014",
+        "type": "ui_text",
+        "z": "f7adeac4.69c4f8",
+        "group": "9bfb1558.e2bb48",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Hướng:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "x": 2260,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "d73f0b33.aff7e8",
+        "type": "inject",
+        "z": "f7adeac4.69c4f8",
+        "name": "",
+        "topic": "",
+        "payload": "3",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1650,
+        "y": 480,
+        "wires": [
+            [
+                "b1d47cd7.28ea9"
+            ]
+        ]
+    },
+    {
+        "id": "596d5f43.c3daa",
+        "type": "http request",
+        "z": "f7adeac4.69c4f8",
+        "name": "[REST][POST]iNut cảm biến - iNut M1",
+        "method": "POST",
+        "ret": "txt",
+        "url": "https://connect.mysmarthome.vn/api/1.0/request/dkjTobCPXidsp7X1NqzKFQbQ4z02/BkCKDKy04/ec41e8b80dfc7959da9dec108d648d68010261252860/req_device_toggle",
+        "tls": "",
+        "x": 2839,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9899942d.fe7528",
+        "type": "http request",
+        "z": "f7adeac4.69c4f8",
+        "name": "[REST][POST]iNut cảm biến - iNut M1",
+        "method": "POST",
+        "ret": "txt",
+        "url": "https://connect.mysmarthome.vn/api/1.0/request/dkjTobCPXidsp7X1NqzKFQbQ4z02/BkCKDKy04/ec41e8b80dfc7959da9dec108d648d68010261252860/req_device_toggle",
+        "tls": "",
+        "x": 2839,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b55ad6e9.a79fd8",
+        "type": "mqtt in",
+        "z": "f7adeac4.69c4f8",
+        "name": "[MQTT-IN]iNut cảm biến - iNut M1",
+        "topic": "request/dkjTobCPXidsp7X1NqzKFQbQ4z02/BkCKDKy04/2ab5886e6dc9ad97ebd7380b7c6df22e010261252860",
+        "qos": "2",
+        "broker": "34abc8b8.0129e8",
+        "x": 1332,
+        "y": 420,
+        "wires": [
+            [
+                "fd48178b.9b80a8"
+            ]
+        ]
+    },
+    {
+        "id": "d4e8abe3.77aaa8",
+        "type": "inject",
+        "z": "f7adeac4.69c4f8",
+        "name": "",
+        "topic": "",
+        "payload": "111",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 1470,
+        "y": 340,
+        "wires": [
+            [
+                "777c31c7.c3c9b"
+            ]
+        ]
+    },
+    {
+        "id": "cbc7ff54.50be4",
+        "type": "ui_gauge",
+        "z": "7ecf65bb.7c1bec",
+        "name": "",
+        "group": "58cf5fe8.50d2e",
+        "order": 1,
+        "width": "10",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Độ ẩm hiện tại",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "200",
+        "colors": [
+            "#1f964f",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 900,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "3f08d2c5.d01bce",
+        "type": "change",
+        "z": "7ecf65bb.7c1bec",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Độ ẩm",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 280,
+        "wires": [
+            [
+                "685d0a23.0817c4",
+                "cbc7ff54.50be4"
+            ]
+        ]
+    },
+    {
+        "id": "685d0a23.0817c4",
+        "type": "ui_chart",
+        "z": "7ecf65bb.7c1bec",
+        "name": "",
+        "group": "58cf5fe8.50d2e",
+        "order": 2,
+        "width": "10",
+        "height": "6",
+        "label": "Biểu Đồ Độ Ẩm",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Biểu Đồ Độ Ẩm",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "200",
+        "removeOlder": "5",
+        "removeOlderPoints": "2000",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 900,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8ff8daa.e58f728",
+        "type": "ui_chart",
+        "z": "7ecf65bb.7c1bec",
+        "name": "",
+        "group": "a8d932b5.1e2b",
+        "order": 2,
+        "width": "10",
+        "height": "6",
+        "label": "Biểu Đồ Nhiệt Độ",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Biểu Đồ Nhiệt Độ",
+        "dot": false,
+        "ymin": "-50",
+        "ymax": "100",
+        "removeOlder": "5",
+        "removeOlderPoints": "2000",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 910,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "945435df.8d2e28",
+        "type": "debug",
+        "z": "7ecf65bb.7c1bec",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 690,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c76327f9.147158",
+        "type": "mqtt out",
+        "z": "7ecf65bb.7c1bec",
+        "name": "",
+        "topic": "outData",
+        "qos": "2",
+        "retain": "",
+        "broker": "a6b4658c.4658b8",
+        "x": 620,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "11da66f4.b54769",
+        "type": "mqtt in",
+        "z": "7ecf65bb.7c1bec",
+        "name": "",
+        "topic": "temperature",
+        "qos": "2",
+        "broker": "dd70acb7.f3603",
+        "x": 470,
+        "y": 340,
+        "wires": [
+            [
+                "945435df.8d2e28",
+                "f1166e20.ce366"
+            ]
+        ]
+    },
+    {
+        "id": "b928c8df.6a9c48",
+        "type": "mqtt in",
+        "z": "7ecf65bb.7c1bec",
+        "name": "",
+        "topic": "humidity",
+        "qos": "2",
+        "broker": "dd70acb7.f3603",
+        "x": 480,
+        "y": 280,
+        "wires": [
+            [
+                "945435df.8d2e28",
+                "3f08d2c5.d01bce"
+            ]
+        ]
+    },
+    {
+        "id": "519bcff3.80cf4",
+        "type": "mqtt in",
+        "z": "7ecf65bb.7c1bec",
+        "name": "",
+        "topic": "outData",
+        "qos": "2",
+        "broker": "a6b4658c.4658b8",
+        "x": 470,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f1166e20.ce366",
+        "type": "change",
+        "z": "7ecf65bb.7c1bec",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Nhiệt độ",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 340,
+        "wires": [
+            [
+                "8ff8daa.e58f728",
+                "f990d4ae.a662c8"
+            ]
+        ]
+    },
+    {
+        "id": "51d442da.c1900c",
+        "type": "json",
+        "z": "bc0f3e1b.f26cc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 165,
+        "y": 84,
+        "wires": [
+            [
+                "563337a2.94c548"
+            ]
+        ]
+    },
+    {
+        "id": "d7124a6f.eced88",
+        "type": "switch",
+        "z": "bc0f3e1b.f26cc",
+        "name": "Phân luồn",
+        "property": "relayId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "5",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "6",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "7",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 8,
+        "x": 825.9869575500488,
+        "y": 288.1562738418579,
+        "wires": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "563337a2.94c548",
+        "type": "function",
+        "z": "bc0f3e1b.f26cc",
+        "name": "Lặp",
+        "func": "if (!msg.states) {\n    msg.states = msg.payload\n    msg.i = 0\n    msg.realTopic = msg.topic\n    return msg;\n} else {\n    msg.i++\n    \n    if (msg.i < msg.states.length)\n        return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 327.89060974121094,
+        "y": 83.33600330352783,
+        "wires": [
+            [
+                "ed078ad8.606798"
+            ]
+        ]
+    },
+    {
+        "id": "ed078ad8.606798",
+        "type": "function",
+        "z": "bc0f3e1b.f26cc",
+        "name": "Lấy trạng thái thiết bị",
+        "func": "msg.relayId = msg.i\nmsg.payload = msg.states[msg.i].state\nmsg.topic = 'Cảm biến #' + msg.i\nmsg.id = msg.realTopic + '/' + msg.relayId\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 477.89060974121094,
+        "y": 183.33600330352783,
+        "wires": [
+            [
+                "563337a2.94c548",
+                "d7124a6f.eced88"
+            ]
+        ]
+    },
+    {
+        "id": "6051201c.100fa",
+        "type": "ui_text",
+        "z": "7ecf65bb.7c1bec",
+        "group": "e97d8b36.114dc8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 2290,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "f6c76e2c.fa5c9",
+        "type": "change",
+        "z": "7ecf65bb.7c1bec",
+        "name": "ONLINE",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "ONLINE",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2160,
+        "y": 860,
+        "wires": [
+            [
+                "6051201c.100fa"
+            ]
+        ]
+    },
+    {
+        "id": "97481b42.5da038",
+        "type": "change",
+        "z": "7ecf65bb.7c1bec",
+        "name": "OFFLINE",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "OFFLINE",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 2160,
+        "y": 940,
+        "wires": [
+            [
+                "6051201c.100fa"
+            ]
+        ]
+    },
+    {
+        "id": "f990d4ae.a662c8",
+        "type": "ui_gauge",
+        "z": "7ecf65bb.7c1bec",
+        "name": "",
+        "group": "a8d932b5.1e2b",
+        "order": 1,
+        "width": "10",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Độ ẩm hiện tại",
+        "label": "oC",
+        "format": "{{value}}",
+        "min": "-50",
+        "max": "100",
+        "colors": [
+            "#1f964f",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 900,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "af5ae5cd.4d5538",
+        "type": "inject",
+        "z": "7ecf65bb.7c1bec",
+        "name": "",
+        "topic": "",
+        "payload": "12",
+        "payloadType": "num",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 450,
+        "y": 560,
+        "wires": [
+            [
+                "20ba0590.f233da"
+            ]
+        ]
+    },
+    {
+        "id": "20ba0590.f233da",
+        "type": "mqtt out",
+        "z": "7ecf65bb.7c1bec",
+        "name": "",
+        "topic": "humidity",
+        "qos": "2",
+        "retain": "",
+        "broker": "dd70acb7.f3603",
+        "x": 660,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "cd8baa38.5aacb8",
+        "type": "ui_chart",
+        "z": "7ecf65bb.7c1bec",
+        "name": "",
+        "group": "b0b05fc9.dbf9",
+        "order": 2,
+        "width": "10",
+        "height": "6",
+        "label": "Biểu Đồ Khoảng Cách",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Biểu Đồ Khoảng Cách",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "300",
+        "removeOlder": "5",
+        "removeOlderPoints": "2000",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 920,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "537662cf.69cecc",
+        "type": "mqtt in",
+        "z": "7ecf65bb.7c1bec",
+        "name": "",
+        "topic": "distance",
+        "qos": "2",
+        "broker": "dd70acb7.f3603",
+        "x": 460,
+        "y": 420,
+        "wires": [
+            [
+                "bb41524b.be6a5"
+            ]
+        ]
+    },
+    {
+        "id": "bb41524b.be6a5",
+        "type": "change",
+        "z": "7ecf65bb.7c1bec",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Khoảng cách",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 420,
+        "wires": [
+            [
+                "cd8baa38.5aacb8",
+                "f8d838dc.b28048"
+            ]
+        ]
+    },
+    {
+        "id": "f8d838dc.b28048",
+        "type": "ui_gauge",
+        "z": "7ecf65bb.7c1bec",
+        "name": "",
+        "group": "b0b05fc9.dbf9",
+        "order": 1,
+        "width": "10",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Khoảng cách hiện tại",
+        "label": "cm",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "300",
+        "colors": [
+            "#1f964f",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 920,
+        "y": 400,
+        "wires": []
+    }
+]
